@@ -28,15 +28,53 @@ The goal of this analysis is to determine whether a patient will develop diabete
 - Correlation heatmap.
 - Data cleaning and handling of missing values.
 
+### Most Important Features
+Based on the feature importance from the Random Forest model, the most important features are:
+1. **Plasma glucose concentration**: Plasma glucose concentration after 2 hours in an oral glucose tolerance test
+2. **Body mass index**: Body mass index (weight in kg/(height in m)^2)
+3. **Age**: Age (years)
+4. **Diabetes pedigree function**: Diabetes pedigree function
+
 ### Model Performance
-- **Logistic Regression**: Accuracy: X, Precision: X, Recall: X, F1 Score: X, ROC AUC: X.
-- **Decision Tree**: Accuracy: X, Precision: X, Recall: X, F1 Score: X, ROC AUC: X.
-- **Random Forest**: Accuracy: X, Precision: X, Recall: X, F1 Score: X, ROC AUC: X.
-- **Gradient Boosting**: Accuracy: X, Precision: X, Recall: X, F1 Score: X, ROC AUC: X.
+- **Logistic Regression**:
+  - Accuracy: 0.7359
+  - Precision: 0.6173
+  - Recall: 0.6250
+  - F1 Score: 0.6211
+  - ROC AUC: 0.7099
+
+- **Decision Tree**:
+  - Accuracy: 0.7056
+  - Precision: 0.5600
+  - Recall: 0.7000
+  - F1 Score: 0.6222
+  - ROC AUC: 0.7043
+
+- **Random Forest**:
+  - Accuracy: 0.7576
+  - Precision: 0.6463
+  - Recall: 0.6625
+  - F1 Score: 0.6543
+  - ROC AUC: 0.7352
+
+- **Gradient Boosting**:
+  - Accuracy: 0.7446
+  - Precision: 0.6265
+  - Recall: 0.6500
+  - F1 Score: 0.6380
+  - ROC AUC: 0.7224
+
+- **Best Random Forest Model after Hyperparameter Tuning**:
+  - Accuracy: 0.7576
+  - Precision: 0.6500
+  - Recall: 0.6500
+  - F1 Score: 0.6500
+  - ROC AUC: 0.7323
 
 ### Important Findings
-- Certain features showed significant correlations with the target variable.
+- The most important features in predicting diabetes are Plasma glucose concentration, Body mass index, Age, and Diabetes pedigree function.
 - Random Forest provided the best overall performance after hyperparameter tuning.
+- Logistic Regression, Decision Tree, and Gradient Boosting models also showed competitive performance.
 
 ## Suggestions for Next Steps
 - Further feature engineering to enhance model performance.
